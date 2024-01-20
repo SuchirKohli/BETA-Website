@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+// import Header from "./components/header/Header";
+// import Footer from "./components/footer/Footer";
+import Home from "./pages/home/home";
+import Events from "./pages/events/events";
+import Team from "./pages/team/team";
+import Gallery from "./pages/gallery/gallery";
+import './App.css'
+
+function ComponentWithHeaderFooter(component){
+  return(
+    <>
+      {/* <Header /> */}
+      {component}
+      {/* <Footer /> */}
+    </>
+  )
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/"         element={ComponentWithHeaderFooter(<Home />)} />
+        <Route path="/about"    element={ComponentWithHeaderFooter(<Team />)} />
+        {/* <Route path="/contact"  element={ComponentWithHeaderFooter(<Contact />)} /> */}
+        <Route path="/gallery" element={ComponentWithHeaderFooter(<Gallery />)} />
+        <Route path="/events"   element={ComponentWithHeaderFooter(<Events />)} />
+        {/* <Route path="/expo"     element={<Expo />} /> */}
+      </Routes>
+    </>
   );
 }
 
