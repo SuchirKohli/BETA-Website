@@ -1,1 +1,1 @@
-print("file ok")
+print("hello world")
