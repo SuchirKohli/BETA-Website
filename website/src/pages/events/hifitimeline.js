@@ -6,17 +6,17 @@ function HiFiTimeline() {
         <Chrono
       items={[
         {
-          title: "Date",
-          cardTitle: "Event1",
-          url: "http://google.com",
-          cardSubtitle: "Brief description of event",
-          cardDetailedText: `Complete description of event`,
+          title: "2 March, 2024",
+          cardTitle: "BIOSPHERE’24",
+          cardSubtitle: "BETA is back with its flagship event, Biosphere. The symposium would witness participation from pharmaceutical giants and renowned guest speakers in the field of biotechnology, not to mention an overview of the exciting research being carried out in the department.",
+          // cardDetailedText: `Complete description of event`,
         },
         {
-          title: "Date",
-          cardTitle: "Event2",
-          cardSubtitle: "Brief description of event",
-          cardDetailedText: `Complete description of event`,
+          title: "24 - 27 March, 2024",
+          cardTitle: "TRYST",
+          url: "https://www.tryst-iitd.org/",
+          cardSubtitle: "The upcoming tech fest will witness scores of competitions, guest lectures and events from BETA. Stay Tuned for event registrations.          ",
+          // cardDetailedText: `Complete description of event`,
         },
         {
           title: "Date",
@@ -28,7 +28,7 @@ function HiFiTimeline() {
         },
       ]}
       mode="VERTICAL_ALTERNATING">
-        <div className="chrono-icons">
+        {/* <div className="chrono-icons">
     <img
       src="https://img.icons8.com/ios-filled/100/000000/twitter.png"
       alt="twitter"
@@ -57,7 +57,7 @@ function HiFiTimeline() {
       src="https://img.icons8.com/ios-filled/100/000000/info.png"
       alt="twitter"
     />
-    </div>
+    </div> */}
     </Chrono>
     )
 }
